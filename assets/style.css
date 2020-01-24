@@ -10,7 +10,8 @@
 
 body {
   background-color: #ccc;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #494949; }
 
 /*===============
     Layouts styles
@@ -25,13 +26,38 @@ body {
 /*===============
     Modules styles
 =================*/
-.card {
-  background: #70b1d3;
-  -webkit-box-shadow: 0 5px 10px red;
-  -ms-box-shadow: 0 5px 10px red;
-  box-shadow: 0 5px 10px red;
-  height: 100px;
-  width: 50%; }
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .card-container .card {
+    background: #eeeeee;
+    -webkit-box-shadow: 0 5px 10px #494949;
+    -ms-box-shadow: 0 5px 10px #494949;
+    box-shadow: 0 5px 10px #494949;
+    border-radius: 5px;
+    height: auto;
+    width: 25%;
+    margin: 0 15px;
+    padding: 0 15px; }
+    .card-container .card .card-title {
+      padding: 12px 25px;
+      border-bottom: 1px solid #c4c4c4; }
+    .card-container .card .card-content {
+      padding: 25px; }
+    .card-container .card .card-footer {
+      padding: 12px 25px;
+      border-top: 1px solid #c4c4c4; }
 
 .title {
   margin: 15px; }
@@ -39,7 +65,6 @@ body {
 .color-scheme {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -103,5 +128,59 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+
+.buttons-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.button {
+  padding: 25px;
+  margin: 0 12px;
+  width: 12.5%;
+  border-radius: 3px; }
+
+.button-blue {
+  background: #007bff;
+  color: #fff; }
+
+.button-default {
+  background: #6c757d;
+  color: #fff; }
+
+.button-success {
+  background: #28a745;
+  color: #fff; }
+
+.button-danger {
+  background: #dc3545;
+  color: #fff; }
+
+.button-warning {
+  background: #ffc107;
+  color: #fff; }
+
+.button-info {
+  background: #117a8b;
+  color: #fff; }
+
+.button-light {
+  background: #dae0e5;
+  color: #fff; }
+
+.button-dark {
+  background: #23272b;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

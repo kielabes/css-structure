@@ -1,9 +1,8 @@
 .title {
-    margin: $marginTop;
+    margin: 15px;
 }
 
 .color-scheme {
-    display: flex;
     @include flexCenter(row);
     color: $white;
     .accent {

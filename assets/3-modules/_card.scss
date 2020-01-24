@@ -1,6 +1,23 @@
-.card {
-    background: $secondary;
-    @include boxShadow(red);
-    height: 100px;
-    width: 50%;
+.card-container {
+    @include flexCenter(row);
+    .card {
+        background: rgb(238, 238, 238);
+        @include boxShadow($accent);
+        @include border-radius(5px);
+        height: auto;
+        width: 25%;
+        margin: 0 15px;
+        padding: 0 15px;
+        .card-title {
+            padding: 12px 25px;
+            border-bottom: 1px solid #c4c4c4;
+        }
+        .card-content {
+            padding: 25px;
+        }
+        .card-footer {
+            padding: 12px 25px;
+            border-top: 1px solid #c4c4c4;
+        }
+    }
 }

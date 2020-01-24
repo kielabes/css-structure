@@ -1,0 +1,51 @@
+.buttons-container {
+    width: 100%;
+    @include flexCenter(row);
+}
+
+.button {
+    padding: 25px;
+    margin: 0 12px;
+    width: 12.5%;
+    @include border-radius(3px);
+}
+
+.button-blue {
+    background: $blue;
+    color: $white;
+}
+
+.button-default {
+    background: $default;
+    color: $white;
+}
+
+.button-success {
+    background: $success;
+    color: $white;
+}
+
+.button-danger {
+    background: $danger;
+    color: $white;
+}
+
+.button-warning {
+    background: $warning;
+    color: $white;
+}
+
+.button-info {
+    background: $info;
+    color: $white;
+}
+
+.button-light {
+    background: $light;
+    color: $white;
+}
+
+.button-dark {
+    background: $dark;
+    color: $white;
+}
