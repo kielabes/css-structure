@@ -1,0 +1,27 @@
+.title {
+    margin: $marginTop;
+}
+
+.color-scheme {
+    display: flex;
+    @include flexCenter(row);
+    color: $white;
+    .accent {
+        background: $accent;
+        height: 200px;
+        width: 33.33%;
+        @include flexCenter(column);
+    }
+    .primary {
+        background: $primary;
+        height: 200px;
+        width: 33.33%;
+        @include flexCenter(column);
+    }
+    .secondary {
+        background: $secondary;
+        height: 200px;
+        width: 33.33%;
+        @include flexCenter(column);
+    }
+}
