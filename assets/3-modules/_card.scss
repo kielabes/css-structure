@@ -1,0 +1,6 @@
+.card {
+    background: $secondary;
+    @include boxShadow(red);
+    height: 100px;
+    width: 50%;
+}

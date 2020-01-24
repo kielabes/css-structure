@@ -1,0 +1,29 @@
+/*===============
+    Base styles
+=================*/
+body {
+  background-color: #637382; }
+
+/*===============
+    Layouts styles
+=================*/
+#header {
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px; }
+
+/*===============
+    Modules styles
+=================*/
+.card {
+  background: #70b1d3;
+  -webkit-box-shadow: 0 5px 10px red;
+  -ms-box-shadow: 0 5px 10px red;
+  -moz-box-shadow: 0 5px 10px red;
+  box-shadow: 0 5px 10px red;
+  height: 100px;
+  width: 50%; }
+
+/*# sourceMappingURL=style.css.map */
